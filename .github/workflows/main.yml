@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Fetch latest pocketbase version
         id: pocketbase
-        uses: augustodelg/repo-get-releases@main
+        uses: fenadmin/repo-get-releases@main
         with:
           repository: pocketbase/pocketbase
           excludes: draft,prerelease
@@ -52,7 +52,7 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: |
-            augustodelg/pocketbase
+            fenadmin/pocketbase
           tags: |
             type=semver,pattern={{version}},value=${{ steps.pocketbase.outputs.version }}
       - name: Build and push

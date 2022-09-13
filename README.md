@@ -14,7 +14,7 @@
 
 ## Docker Run
 ```bash
-docker run --name pocketbase -p 8090:8090 -v pocketbase-data:/pb_data augustodelg/pocketbase:latest 
+docker run --name pocketbase -p 8090:8090 -v pocketbase-data:/pb_data fenadmin/pocketbase:latest 
 ```
 ## Docker Compose
 
@@ -25,7 +25,7 @@ version: '3.7'
 
 services:
   pocketbase:
-    image: augustodelg/pocketbase:latest
+    image: fenadmin/pocketbase:latest
     restart: unless-stopped
     ports:
       - 8090:8090

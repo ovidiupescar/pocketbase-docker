@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   pocketbase:
-    image: augustodelg/pocketbase
+    image: fenadmin/pocketbase
     ports:
       - 8090:8090
     volumes:
